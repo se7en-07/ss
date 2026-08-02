@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Letter for You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #f4e8e8 100%);
+      --paper-bg: #e7ace9;
+      --text-color: #4e1540;
+      --accent-color: #b85b5b;
+      --subtle-line: #eae0d5;
+      --shadow: 0 12px 40px rgba(30, 2, 31, 0.247);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background-image: url('wwe.jfif');
+      background-repeat: no-repeat;
+      background-size:  cover;
+        padding: 40px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      color: rgba(211, 25, 211, 0.562);  
+      line-height: 1.8;
+    }
+
+    .letter-container {
+      max-width: 680px;
+      width: 100%;
+      background: var(--paper-bg);
+      padding: 60px 50px;
+      border-radius: 4px;
+      box-shadow: var(--shadow);
+      position: relative;
+      border: 0px solid rgba(63, 4, 50, 0.562);
+    }
+
+    /* Decorative top accent border */
+    .letter-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #de38ff, var(--accent-color), #e838ff);
+      border-radius: 4px 4px 0 0;
+    }
+
+    .letter-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--subtle-line);
+      padding-bottom: 15px;
+    }
+
+    
+
+    .salutation {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-style: italic;
+      color: var(--accent-color);
+    }
+
+    .letter-body {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: #742424;
+    }
+
+    .letter-body p {
+      margin-bottom: 24px;
+      text-indent: 20px;
+    }
+
+    .letter-body p:first-of-type {
+      text-indent: 0;
+    }
+
+    .heart-divider {
+      text-align: center;
+      margin: 2px 0;
+      color: #ba23ce;
+      font-size: 5.5rem;
+      opacity: 0.7;
+    }
+
+    .letter-footer {
+      margin-top: 40px;
+      text-align: right;
+    }
+
+    .closing {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #703838;
+      margin-bottom: 10px;
+    }
+
+    .signature {
+      font-family: 'Caveat', cursive;
+      font-size: 2.2rem;
+      color: var(--accent-color);
+      display: inline-block;
+      transform: rotate(-3deg);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      .letter-container {
+        padding: 40px 25px;
+      }
+      .letter-header {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .letter-body {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <article class="letter-container">
+    <header class="letter-header">
+      <h1 class="salutation">Hey!</h1>
+      </header>
+    <main class="letter-body">
+      <p>I know kaya mo 'yan, and I'm so proud of you. Alam ko maraming challenges ka nang nalagpasan, and if hindi mo man pansin, sobrang layo na nang narating mo. Later will be the next journey you're taking on, and it's a big day of your life.</p>
+
+      <p>I know you might face another challenge na naman and... Sometimes change can be scary, but I know you're going to be fine because it's okay to be scared, you'll just have to do it anyway, and being scared means you're about to do something really, really brave.</p>
+
+      
+
+      <p>Just remember I'm always here to cheer you up. Good luck and Fighting!!</p>
+<div class="heart-divider">✦ &nbsp; ♥ &nbsp; ✦</div>
+    </main>
+
+    <footer class="letter-footer">
+      <div class="closing">And if you have time, you might want to take a look at this.,</div>
+      <div class="signature">Click this cute panda.</div>
+    <button> 
+        
+
+     <a href="Untitled-1.html"><img src="dd.png" border:none; width="70px" height="70px" alt="" border:none;/></a>
+    
+    </button>
+    </footer>
+  </article>
+
+</body>
+</html>
