@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Letter for You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #f4e8e8 100%);
+      --paper-bg: #fffdfa;
+      --text-color: #2c2523;
+      --accent-color: #b85b5b;
+      --subtle-line: #eae0d5;
+      --shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg-gradient);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      color: var(--text-color);
+      line-height: 1.8;
+    }
+
+    .letter-container {
+      max-width: 680px;
+      width: 100%;
+      background: var(--paper-bg);
+      padding: 60px 50px;
+      border-radius: 4px;
+      box-shadow: var(--shadow);
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+
+    /* Decorative top accent border */
+    .letter-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #d4a373, var(--accent-color), #d4a373);
+      border-radius: 4px 4px 0 0;
+    }
+
+    .letter-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--subtle-line);
+      padding-bottom: 15px;
+    }
+
+    .date {
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #8c7a6b;
+    }
+
+    .salutation {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-style: italic;
+      color: var(--accent-color);
+    }
+
+    .letter-body {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: #3d3330;
+    }
+
+    .letter-body p {
+      margin-bottom: 24px;
+      text-indent: 20px;
+    }
+
+    .letter-body p:first-of-type {
+      text-indent: 0;
+    }
+
+    .letter-body p::first-letter {
+      font-size: 1.3em;
+      color: var(--accent-color);
+    }
+
+    .heart-divider {
+      text-align: center;
+      margin: 35px 0;
+      color: var(--accent-color);
+      font-size: 1.2rem;
+      opacity: 0.7;
+    }
+
+    .letter-footer {
+      margin-top: 40px;
+      text-align: right;
+    }
+
+    .closing {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #6e5e53;
+      margin-bottom: 10px;
+    }
+
+    .signature {
+      font-family: 'Caveat', cursive;
+      font-size: 2.2rem;
+      color: var(--accent-color);
+      display: inline-block;
+      transform: rotate(-3deg);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      .letter-container {
+        padding: 40px 25px;
+      }
+      .letter-header {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .letter-body {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <article class="letter-container">
+    <header class="letter-header">
+      <h1 class="salutation">Dearest,</h1>
+      <time class="date">October 24, 2026</time>
+    </header>
+
+    <main class="letter-body">
+      <p>I sat down today trying to find the right words, though I suspect that language will always fall a little short of what I actually want to tell you. Sometimes the most profound things we feel don't fit neatly into sentences, but I wanted to try anyway.</p>
+
+      <p>Looking back at how our paths crossed, I am continuously amazed by how ordinary moments can suddenly become the anchors of a life. Before you, the world moved at its usual pace—predictable, quiet, and complete in its own way. But having you in my life has given everything a richer texture. You have this rare, effortless way of making ordinary days feel like something worth keeping.</p>
+
+      <div class="heart-divider">✦ &nbsp; ♥ &nbsp; ✦</div>
+
+      <p>I love the quiet moments best. The unscripted ones—when we're not trying to mark a grand occasion, but simply sharing space. The sound of your laughter when something catches you by surprise, the way you listen when someone is speaking, and the gentle steadiness you bring into a room just by being in it. You carry a warmth that settles everything around you.</p>
+
+      <p>Thank you for being my favorite place to return to, my quiet confidence, and my happiest thought in the middle of a busy day. I don't know what every year ahead holds, but I know with absolute certainty that I want to walk through all of them with you.</p>
+
+      <p>Always and truly yours,</p>
+    </main>
+
+    <footer class="letter-footer">
+      <div class="closing">With all my love,</div>
+      <div class="signature">Your Name</div>
+    </footer>
+  </article>
+
+</body>
+</html>
